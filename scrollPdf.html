@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PDF.js Keyword Search</title>
+    <style>
+        #pdf-container {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .pdf-page {
+            margin-bottom: 20px;
+        }
+    
+    </style>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="viewer.css"> -->
+</head>
+
+<body>
+    <div id="search-container">
+        <input type="text" id="keyword" placeholder="Enter keyword">
+        <button id="btn">Search</button>
+    </div>
+    <div id="pdf-container"></div>
+</body>
+<script type="module" src="./pdf.mjs"></script>
+<script type="module" src="./pdf.worker.mjs"></script>
+<script type="module" src="./action.js"></script>
+
+</html>
